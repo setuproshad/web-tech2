@@ -24,12 +24,10 @@
     }
     /*Update data in test table*/
     $sql1 = "UPDATE test SET heading='".$_POST['heading']."',summertext='".$_POST['newsbody']."' WHERE id='".$_SESSION['id']."';";
-    /*Insert data in edit table fetched from test table*/
-    $sql2 = "INSERT INTO edit (id,heading,summertext,datetime)
-    VALUES ('".$idEdit."', '".$headingEdit."', '".$summertextEdit."','".$datetimeEdit."')";
-    if (mysqli_query($conn, $sql1) && mysqli_query($conn, $sql2))
+
+    if (mysqli_query($conn, $sql1))
     {
-        header('location:listdata.php');
+        header('location:http://localhost:8082/news%20updated/listdata.php');
     } 
     mysqli_close($conn);
 ?>

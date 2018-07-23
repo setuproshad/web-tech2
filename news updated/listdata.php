@@ -21,7 +21,7 @@
         <ul class="nav navbar-nav">
             <li><a href="home.php">Home</a></li>
             <li><a href="viewdata.php">View data</a></li>
-            <li class="active"><a href="listdata.php">List Data</a></li>
+            <li class="active"><a href="listdata.php">List data</a></li>
             <li><a href="#">category 3</a></li>
         </ul>
     </div>
@@ -37,7 +37,7 @@
         <?php
             require 'config.php';
 
-            $statement="select * from test order by id desc";
+            $statement="select * from test where isvalid=0 order by id desc";
             $result = mysqli_query($conn, $statement);
 
             if (mysqli_num_rows($result) > 0)

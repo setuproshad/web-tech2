@@ -26,6 +26,7 @@
             <li><a href="viewdata.php">view Data</a></li>
             <li><a href="listdata.php">List Data</a></li>
             <li><a href="#">category 3</a></li>
+			<li><a href="index1.php">Login</a></li>
         </ul>
     </div>
 </nav>
